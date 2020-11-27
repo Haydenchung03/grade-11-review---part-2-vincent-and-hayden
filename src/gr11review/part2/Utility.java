@@ -2,28 +2,21 @@ package gr11review.part2;
 public class Utility{
   public static int sumNumbers(String str){
     int intLength;
-    intLength = str.Length();
+    intLength = str.length();
     int intCount;
     int intSum = 0;
     String strWord = "";
     for(intCount = 0; intCount < intLength; intCount++){
-      if(Character.isDigit(strcharAt(intCount))) {
-        if (intCount < intLength-1 && Character.isDigit(strCharAt(intCount+1))){
-          strWord += strCharAt(intCount);
+      if(Character.isDigit(str.charAt(intCount))) {
+        if (intCount < intLength-1 && Character.isDigit(str.CharAt(intCount+1))){
+          strWord += str.CharAt(intCount);
         }else{
-          strWord += strCharAt(intCount);
+          strWord += str.CharAt(intCount);
           intSum += Integer.parseInt(strWord);
           strWord = "";
         }
       }
     }
     return intSum;
-  }
-}
-
-import gr11review.part2.Utility.*;
-public class Utility {
-  public static void main(String[] args){
-
   }
 }
