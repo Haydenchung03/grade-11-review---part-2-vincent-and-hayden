@@ -2,6 +2,7 @@ package gr11review.part2;
 
 import java.io.*;
 import java.io.FileReader;
+//import gr11review.part2.Main.*;
 
 public class Utility{
   public static int sumNumbers(String str){
@@ -12,10 +13,10 @@ public class Utility{
     String strWord = "";
     for(intCount = 0; intCount < intLength; intCount++){
       if(Character.isDigit(str.charAt(intCount))) {
-        if (intCount < intLength-1 && Character.isDigit(str.CharAt(intCount+1))){
-          strWord += str.CharAt(intCount);
+        if (intCount < intLength-1 && Character.isDigit(str.charAt(intCount+1))){
+          strWord += str.charAt(intCount);
         }else{
-          strWord += str.CharAt(intCount);
+          strWord += str.charAt(intCount);
           intSum += Integer.parseInt(strWord);
           strWord = "";
         }
